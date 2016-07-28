@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory.Phone.IOS
+namespace Factory.Phone.Android
 {
-    class IOSPhone
+    interface IGoogleNow
     {
+        void CreateNotes();
+        void Alarm();
+        void Search();
     }
 }

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory.Phone.Android
+namespace Factory.Phone.IOS
 {
-    class Android
+    interface ISiri
     {
+        void Assist();
     }
 }

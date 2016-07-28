@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory.Phone
+namespace Factory.Phone.IOS
 {
-    class BasicPhone
+    class IPhone5S : AbstractIPhone
     {
-        static BasicPhone()
+        public override string Name
         {
-
+            get { return "IPhone 5S"; }
         }
-
     }
 }

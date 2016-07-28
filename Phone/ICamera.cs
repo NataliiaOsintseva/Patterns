@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Factory.Phone
 {
-    public interface IPhoneBase
+    interface ICamera
     {
-        void Ring();
-        void Call();
-        void TurnOn();
-        void TurnOff();
+        void TakePhoto();
+        void Flash();
     }
 }

@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Factory.Phone
 {
-    public interface IPhoneBase
+    interface ISensorScreen
     {
-        void Ring();
-        void Call();
-        void TurnOn();
-        void TurnOff();
+        void InteractViaScreen();
     }
 }
