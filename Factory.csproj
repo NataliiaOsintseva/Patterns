@@ -43,15 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client.cs" />
     <Compile Include="Factory\AndroidFactory.cs" />
     <Compile Include="Factory\IOSFactory.cs" />
     <Compile Include="Factory\IPhoneFactory.cs" />
     <Compile Include="Factory\WidowsPhoneFactory.cs" />
-    <Compile Include="Phone\Android\Android.cs" />
-    <Compile Include="Phone\BasicPhone.cs" />
-    <Compile Include="Phone\IOS\IOSPhone.cs" />
+    <Compile Include="Phone\Android\AbstractAndroid.cs" />
+    <Compile Include="Phone\Android\IGoogleNow.cs" />
+    <Compile Include="Phone\Android\ISHealth.cs" />
+    <Compile Include="Phone\Android\SamsungGalaxyS6.cs" />
+    <Compile Include="Phone\PhoneBase.cs" />
+    <Compile Include="Phone\ICamera.cs" />
+    <Compile Include="Phone\IOS\AbstractIPhone.cs" />
+    <Compile Include="Phone\IOS\IPhone5S.cs" />
+    <Compile Include="Phone\IOS\ISiri.cs" />
     <Compile Include="Phone\IPhoneBase.cs" />
-    <Compile Include="Phone\WindowsPhone\WindowsPhone.cs" />
+    <Compile Include="Phone\ISensorScreen.cs" />
+    <Compile Include="Phone\WindowsPhone\AbstractWindowsPhone.cs" />
+    <Compile Include="Phone\WindowsPhone\NokiaLumia520.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
