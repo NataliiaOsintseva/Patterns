@@ -4,15 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Factory.Phone;
-using Factory.Phone.IOS;
+using Factory.Phone.Apple;
 
 namespace Factory.Factory
 {
-    public class IOSFactory : IPhoneFactory
+    public class AppleFactory : IPhoneFactory
     {
-        public IPhoneBase CreatePhone()
+        public IBudgetModel GetBudgetModel()
         {
             return new IPhone5S();
+        }
+
+        public IFlagman GetFlagman()
+        {
+            return new IPhone6SPlus();
         }
     }
 }

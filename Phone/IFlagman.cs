@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory.Phone.Android
+namespace Factory.Phone
 {
-    interface ISHealth
+    public interface IFlagman
     {
-        void CountSteps();
-        void CheckWeight(int weight, int height);
+        string Moto();
     }
 }

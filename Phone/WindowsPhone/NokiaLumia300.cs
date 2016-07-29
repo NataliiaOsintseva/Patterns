@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Factory.Phone.WindowsPhone
 {
-    public class AbstractWindowsPhone : PhoneBase
+    public class NokiaLumia300 : AbstractWindowsPhone, IBudgetModel
     {
-        public override string OperationalSystem
+        public string Moto()
         {
-            get { return "Windows is my OS"; }
+            return "Not fansy, but reliable";
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Factory.Factory;
 using Factory.Phone;
+using Factory.Phone.Samsung;
 using System.Reflection;
 
 namespace Factory
@@ -13,19 +14,16 @@ namespace Factory
     {
         public static void Main(string[] args)
         {
+            ManufacturerChecker checker = new ManufacturerChecker(Manufacturers.Samsung);
+            checker.CheckProducts();
 
-            IPhoneFactory phoneFactory = LoadFactory();
-            IPhoneBase phone = phoneFactory.CreatePhone();
+            checker = new ManufacturerChecker(Manufacturers.WindowsPhone);
+            checker.CheckProducts();
 
-            phone.Ring();
-            phone.TurnOn();
+            checker = new ManufacturerChecker(Manufacturers.Apple);
+            checker.CheckProducts();
 
-        }
-
-        static IPhoneFactory LoadFactory()
-        {
-            return new AndroidFactory();
-
+            Console.ReadKey();             
         }
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory.Phone.IOS
+namespace Factory.Phone.Apple
 {
-    abstract class AbstractIPhone : PhoneBase, ICamera, ISensorScreen, ISiri
+    public abstract class AbstractIPhone : PhoneBase, ICamera, ISensorScreen, ISiri
     {
         public override string OperationalSystem
         {

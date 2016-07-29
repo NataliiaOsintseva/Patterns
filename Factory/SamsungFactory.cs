@@ -1,23 +1,23 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Factory.Phone;
-using Factory.Phone.WindowsPhone;
+using Factory.Phone.Samsung;
 
 namespace Factory.Factory
 {
-    public class WidowsPhoneFactory : IPhoneFactory
+    public class SamsungFactory : IPhoneFactory
     {
         public IBudgetModel GetBudgetModel()
         {
-            return new NokiaLumia300();
+            return new SamsungGalaxyA6();
         }
 
         public IFlagman GetFlagman()
         {
-            return new NokiaLumia520();
+            return new SamsungGalaxyS6();
         }
     }
 }

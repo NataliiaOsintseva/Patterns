@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory.Phone.Android
+namespace Factory.Phone.Samsung
 {
-    public class SamsungGalaxyS6 : AbstractAndroid, ISensorScreen, ISHealth
+    public class SamsungGalaxyS6 : AbstractSamsung, ISensorScreen, ISHealth, IFlagman
     {
         public override string Name
         {
@@ -40,6 +40,11 @@ namespace Factory.Phone.Android
         public void GalaxyAssist()
         {
             Console.WriteLine("My name is Galaxy, how can I help you?"); ;
+        }
+
+        public string Moto()
+        {
+            return "Samsung Flagman. Be the best";
         }
     }
 }
