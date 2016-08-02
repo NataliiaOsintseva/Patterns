@@ -8,7 +8,7 @@ namespace ComputerFactory.ComputerWarehouse.Factory.ComponentsFactory
 {
     public class BiosFactory : IFactory<BiosFactory>
     {
-        public TComponent Build<TComponent>() where TComponent : IComponent<BiosFactory>, new()
+        public TComponent Build<TComponent>() where TComponent : IComponent, new()
         {
             Console.WriteLine("Creating BIOS: " + typeof(TComponent));
             return new TComponent();

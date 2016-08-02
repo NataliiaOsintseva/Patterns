@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 using ComputerFactory.ComputerWarehouse.Factory;
 using ComputerFactory.ComputerWarehouse;
 using ComputerFactory.ComputerWarehouse.Factory.ComponentsFactory;
+using ComputerFactory.ComputerWarehouse.ComponentsWarehouse.HDD;
 
 namespace ComputerFactory.ComputerWarehouse.ComponentsWarehouse.OS
 {
-    public class Windows10 : IComponent<OSFactory>, IWindows
+    class Windows10 : AbstractOS,  IWindows
     {
-        public void Operate()
+        public override void Interact(AbstractHDD hdd)
+        {
+            Console.WriteLine(this + " interacts with " + hdd);
+        }
+
+        override public void Operate()
         {
             Console.WriteLine("Windows 10 is up and running!");
         }

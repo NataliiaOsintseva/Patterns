@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ComputerFactory.ComputerWarehouse
 {
-    public interface IComponent<TFactory>
+    public interface IComponent
     {
         void Operate();
     }

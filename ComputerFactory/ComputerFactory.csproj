@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\HDD\AbstractHDD.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\OS\AbstractOS.cs" />
     <Compile Include="ComputerWarehouse\ComponentsWarehouse\OS\IWindows.cs" />
     <Compile Include="ComputerWarehouse\ComponentsWarehouse\OS\Windows10.cs" />
     <Compile Include="ComputerWarehouse\Factory\ComponentsFactory\BiosFactory.cs" />
@@ -64,7 +66,6 @@
     <Folder Include="ComputerWarehouse\ComponentsWarehouse\BIOS\" />
     <Folder Include="ComputerWarehouse\ComponentsWarehouse\CPU\" />
     <Folder Include="ComputerWarehouse\ComponentsWarehouse\Display\" />
-    <Folder Include="ComputerWarehouse\ComponentsWarehouse\HDD\" />
     <Folder Include="ComputerWarehouse\ComponentsWarehouse\Manipulator\" />
     <Folder Include="ComputerWarehouse\ComponentsWarehouse\RAM\" />
   </ItemGroup>

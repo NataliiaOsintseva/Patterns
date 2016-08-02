@@ -9,6 +9,6 @@ namespace ComputerFactory.ComputerWarehouse.Factory
 {
     public interface IFactory<TFactory>
     {
-        TComponent Build<TComponent>() where TComponent : IComponent<TFactory>, new();
+        TComponent Build<TComponent>() where TComponent : IComponent, new();
     }
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory.csproj", "{57B3A175-4DC6-44C4-9BC2-A79203FD1806}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerFactory", "..\ComputerFactory\ComputerFactory.csproj", "{292279DF-3302-437A-B5CB-6E4B557B0ADC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerFactory", "ComputerFactory\ComputerFactory.csproj", "{292279DF-3302-437A-B5CB-6E4B557B0ADC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
