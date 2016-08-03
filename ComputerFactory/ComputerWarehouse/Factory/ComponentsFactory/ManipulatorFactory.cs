@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ComputerFactory.ComputerWarehouse.Factory.ComponentsFactory
 {
-    public class ManipulatorFactory : IFactory<ManipulatorFactory>
+    public class ManipulatorFactory : IComponentFactory<ManipulatorFactory>
     {
         public TComponent Build<TComponent>() where TComponent : IComponent, new()
         {

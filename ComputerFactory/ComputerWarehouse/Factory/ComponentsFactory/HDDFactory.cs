@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ComputerFactory.ComputerWarehouse.Factory.ComponentsFactory
 {
-    public class HDDFactory : IFactory<HDDFactory>
+    public class HDDFactory : IComponentFactory<HDDFactory>
     {
         public TComponent Build<TComponent>() where TComponent : IComponent, new()
         {

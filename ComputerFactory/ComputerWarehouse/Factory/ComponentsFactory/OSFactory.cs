@@ -7,7 +7,7 @@ using ComputerFactory.ComputerWarehouse.ComponentsWarehouse.OS;
 
 namespace ComputerFactory.ComputerWarehouse.Factory.ComponentsFactory
 {
-    public class OSFactory : IFactory<OSFactory>
+    public class OSFactory : IComponentFactory<OSFactory>
     {
         public TComponent Build<TComponent>() where TComponent : IComponent, new()
         {

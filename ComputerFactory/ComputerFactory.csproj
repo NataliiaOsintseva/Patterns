@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComputerWarehouse\Assembly.cs" />
+    <Compile Include="ComputerWarehouse\AssemblerComputer.cs" />
     <Compile Include="ComputerWarehouse\ComponentsWarehouse\AbstractMotherBoard.cs" />
     <Compile Include="ComputerWarehouse\ComponentsWarehouse\AsusMotherBoard.cs" />
     <Compile Include="ComputerWarehouse\ComponentsWarehouse\BIOS\AbstractBios.cs" />
@@ -69,6 +69,10 @@
     <Compile Include="ComputerWarehouse\ComponentsWarehouse\RAM\AbstractRAM.cs" />
     <Compile Include="ComputerWarehouse\ComponentsWarehouse\RAM\OCZ.cs" />
     <Compile Include="ComputerWarehouse\ComponentsWarehouse\RAM\Transcend.cs" />
+    <Compile Include="ComputerWarehouse\ComputersWarehouse\DellComputer.cs" />
+    <Compile Include="ComputerWarehouse\Factory\ComputersFactory\DellComputerFactory.cs" />
+    <Compile Include="ComputerWarehouse\IComputer.cs" />
+    <Compile Include="ComputerWarehouse\Factory\ComputersFactory\AbstractComputerFactory.cs" />
     <Compile Include="ComputerWarehouse\Factory\ComponentsFactory\BiosFactory.cs" />
     <Compile Include="ComputerWarehouse\Factory\ComponentsFactory\CPUFactory.cs" />
     <Compile Include="ComputerWarehouse\Factory\ComponentsFactory\DisplayFactory.cs" />
@@ -76,7 +80,7 @@
     <Compile Include="ComputerWarehouse\Factory\ComponentsFactory\ManipulatorFactory.cs" />
     <Compile Include="ComputerWarehouse\Factory\ComponentsFactory\OSFactory.cs" />
     <Compile Include="ComputerWarehouse\Factory\ComponentsFactory\RAMFactory.cs" />
-    <Compile Include="ComputerWarehouse\Factory\IFactory.cs" />
+    <Compile Include="ComputerWarehouse\Factory\IComponentFactory.cs" />
     <Compile Include="ComputerWarehouse\IComponent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
