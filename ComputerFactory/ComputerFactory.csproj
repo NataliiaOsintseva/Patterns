@@ -43,10 +43,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComputerWarehouse\Assembly.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\AbstractMotherBoard.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\AsusMotherBoard.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\BIOS\AbstractBios.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\BIOS\Ami.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\BIOS\Award.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\CPU\AbstractCPU.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\CPU\AMD.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\CPU\Intel.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\Display\AbstractDisplay.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\Display\Samsung.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\Display\Sony.cs" />
     <Compile Include="ComputerWarehouse\ComponentsWarehouse\HDD\AbstractHDD.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\HDD\Hitachi.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\HDD\Seagate.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\Manipulator\AbstractManipulator.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\Manipulator\Keyboard.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\Manipulator\Mouse.cs" />
     <Compile Include="ComputerWarehouse\ComponentsWarehouse\OS\AbstractOS.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\OS\ILinux.cs" />
     <Compile Include="ComputerWarehouse\ComponentsWarehouse\OS\IWindows.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\OS\Ubuntu.cs" />
     <Compile Include="ComputerWarehouse\ComponentsWarehouse\OS\Windows10.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\RAM\AbstractRAM.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\RAM\OCZ.cs" />
+    <Compile Include="ComputerWarehouse\ComponentsWarehouse\RAM\Transcend.cs" />
     <Compile Include="ComputerWarehouse\Factory\ComponentsFactory\BiosFactory.cs" />
     <Compile Include="ComputerWarehouse\Factory\ComponentsFactory\CPUFactory.cs" />
     <Compile Include="ComputerWarehouse\Factory\ComponentsFactory\DisplayFactory.cs" />
@@ -62,13 +84,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ComputerWarehouse\ComponentsWarehouse\BIOS\" />
-    <Folder Include="ComputerWarehouse\ComponentsWarehouse\CPU\" />
-    <Folder Include="ComputerWarehouse\ComponentsWarehouse\Display\" />
-    <Folder Include="ComputerWarehouse\ComponentsWarehouse\Manipulator\" />
-    <Folder Include="ComputerWarehouse\ComponentsWarehouse\RAM\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -9,7 +9,7 @@ namespace ComputerFactory.ComputerWarehouse.Factory.ComponentsFactory
 {
     public class OSFactory : IFactory<OSFactory>
     {
-        public TComponent Build<TComponent>() where TComponent : IComponent<OSFactory>, new()
+        public TComponent Build<TComponent>() where TComponent : IComponent, new()
         {
             Console.WriteLine("Creating OS: " + typeof(TComponent));
             return new TComponent();

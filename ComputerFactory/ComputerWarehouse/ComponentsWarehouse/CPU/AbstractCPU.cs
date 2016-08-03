@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace ComputerFactory.ComputerWarehouse.ComponentsWarehouse.CPU
 {
-    abstract class AbstractCPU
+    abstract class AbstractCPU : IComponent
     {
         public abstract void Interact(AbstractMotherBoard motherboard);
+
+        public virtual void Operate()
+        {
+            Console.WriteLine(this + "  is up and running!");
+        }
     }
 }

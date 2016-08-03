@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace ComputerFactory.ComputerWarehouse.ComponentsWarehouse.Manipulator
 {
-    abstract class AbstractManipulator
+    abstract class AbstractManipulator : IComponent
     {
         public abstract void Interact(AbstractMotherBoard motherboard);
+
+        public virtual void Operate()
+        {
+            Console.WriteLine(this + "  is up and running!");
+        }
     }
 }

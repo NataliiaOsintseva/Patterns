@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace ComputerFactory.ComputerWarehouse.ComponentsWarehouse.HDD
 {
-    abstract class AbstractHDD
+    abstract class AbstractHDD : IComponent
     {
         public abstract void Interact(AbstractMotherBoard motherboard);
+
+        public virtual void Operate()
+        {
+            Console.WriteLine(this + "  is up and running!");
+        }
     }
 }

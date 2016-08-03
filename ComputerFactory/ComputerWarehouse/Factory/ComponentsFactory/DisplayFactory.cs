@@ -8,7 +8,7 @@ namespace ComputerFactory.ComputerWarehouse.Factory.ComponentsFactory
 {
     public class DisplayFactory : IFactory<DisplayFactory>
     {
-        public TComponent Build<TComponent>() where TComponent : IComponent<DisplayFactory>, new()
+        public TComponent Build<TComponent>() where TComponent : IComponent, new()
         {
             Console.WriteLine("Creating Display: " + typeof(TComponent));
             return new TComponent();

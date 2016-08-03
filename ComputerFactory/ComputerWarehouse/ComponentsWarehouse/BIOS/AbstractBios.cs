@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace ComputerFactory.ComputerWarehouse.ComponentsWarehouse.BIOS
 {
-    abstract class AbstractBios
+    abstract class AbstractBios : IComponent
     {
         public abstract void Interact(AbstractMotherBoard motherboard);
+
+        public virtual void Operate()
+        {
+            Console.WriteLine(this + "  is up and running!");
+        }
     }
 }
